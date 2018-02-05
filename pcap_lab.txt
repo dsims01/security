@@ -1,26 +1,38 @@
 Derek Sims
 Security Pcap Lab
 
-
 set1.pcap
 1. How many packets are there in this set?
+367
 
 2. What protocol was used to transfer files from PC to server?
+FTP
 
 3. Briefly describe why the protocol used to transfer the files is insecure?
+All of the communication is unencrypted so any hacker can easily see what is
+going on in plain english
 
 4. What is the secure alternative to the protocol used to transfer files?
+FTPS
 
 5. What is the IP address of the server? (be careful)
+192.168.1.3
 
 6. What was the username and password used to access the server?
+username: blinkythewonderchimp
+password: F00tball!
 
 7. How many files were transferred from PC to server?
+5
 
 8. What are the names of the files transferred from PC to server?
+045ece36a178933c16fba8ee340b7ac459e95475317df833bffd2c2f8bfb2c85.jpg
+Aleph1.txt
+C-658VsXoAo3ovC.jpg
+geer.source.27iv17.txt
+wut.jpg
 
 9. Extract all the files that were transferred from PC to server. These files must be part of your submission!
-
 
 
 set2.pcap
