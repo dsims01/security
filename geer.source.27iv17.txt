@@ -1,0 +1,819 @@
+[nominal delivery draft, 27 April 2017]
+
+Dan Geer
+SOURCE Boston, closing keynote
+
+Good afternoon.  If you were to come to my office, you would see
+on the wall these four rules:
+
+. Work like Hell
+. Share all you know
+. Abide by your handshake
+. Have fun
+
+Your invitation encompasses all four, and I thank you for it.
+
+And that opening is exactly how I began my talk to this meeting
+nine years ago.  It is all still true.
+
+My topic for today is likewise again the future.  In a sense, "the
+future" is once and always the topic for any security talk.  The
+reason that is so needs no explanation, and so I won't.
+
+When I was younger, I used to say that I lived in the future.  Most
+people who would say that are thinking William Gibson's "The future
+is already here -- it's just not very evenly distributed".[WG] I
+did not mean it that way; what I meant was staring into the fog of
+the future as hard as I can stare and so to pick a path.
+
+Some of you will recognize a verse from 1st Corinthians, Chapter 13,
+"For now we see through a glass, darkly; but then face to face: now
+I know in part; but then shall I know even as also I am known".  In
+the original Greek, the "dark glass" is a word with substantial
+cybersecurity import; it is "enigma".  I will return to this point
+shortly, but in the meantime let me be clear: Cybersecurity and the
+future of humanity are conjoined now.  Each of cybersecurity's core
+realities has policy freight, but full analysis is too subtle for
+this afternoon's short exercise.
+
+However you feel about the origins of the world, it is now our
+world.  We are evolving it.  Our intervention in evolution is just
+more evolution, but at a faster clock rate.  Changes that depend
+on the favorable alignment of random perturbations take geologic
+time, including time to test for side effects.  Changes that are
+designed may have just as many unforeseen consequences, but the
+equilibria they punctuate are of much shorter duration, often a
+duration short enough that there is little real stability between
+episodes of punctuating rapid change.  By analogy, as wind strengthens
+at sea, waves stop getting higher and become closer together.
+
+In my career, I have seen enough of these cycles of stability and
+surprise to find the description apt even if its cadence is arrythmic.
+The most challenging security RFP I ever received was three bullets
+long:
+
+. Assess us thoroughly
+. Tell us how we compare to our peers
+. Stream us Engineering Change Orders that keep us at constant risk
+
+and, despite its brevity and clarity, it was simply impossible to
+meet.
+
+At each stage of evolution, the best X ever produced is also the
+last X ever produced when it is itself rendered irrelevant by the
+leading edge of the next phase.  Unless we have become as Gods,
+some mix of the unexpected and our adaptations to it will be that
+of which the future is made.  Every invention we make proves either
+non-viable, which is to say a non-functional mutation within our
+human-designed ecosystem, or viable, which is to say it seizes an
+hitherto unoccupied niche either by creating that niche or by
+stealing it from whatever occupies it now.  Whether creating or
+stealing niches matters not since over time, the number of niches
+increases, at least until a catharsis, which in the original Greek
+meant "purification" or "cleansing".
+
+The important thing to realize here is that to the biome, to the
+occupier of a niche that was here yesterday and will be gone tomorrow,
+extinction is a surprise.  No tree can say "Time to move uphill"
+and no salamander can think "I need to mutate."  Evolutionary change
+depends on this unpredictability; otherwise yesterday's winners are
+tomorrow's winners, yesterday's dominant species only get more
+dominant tomorrow.  This is true both for Nature as wetware and
+nature as software.
+
+I trust that some of you have read Nassim Taleb's work[NT] for which
+a, if not the, central point is that as the tails of a distribution
+get fatter, the mean, the average, the predictable becomes a function
+of the distribution's extreme values alone and all the rest of the
+distribution is so much window dressing.  A fat-tailed setting
+inherently resists prediction, but for that very reason makes
+prediction ever more compelling to pursue.  Taleb synopsizes the
+present momentum:
+
+    [We are] undergoing a switch between [continuous low grade
+    volatility] to ... the process moving by jumps, with less and
+    less variations outside of jumps.
+
+Note that I am not conjuring up nation state actors or divine
+intervention, though I personally believe that both are at work and
+at all times.  What I am suggesting is that change is what evolution
+is about, that change is rarely steady but rather tends to be abrupt,
+that change is event driven, that the amount of change an event
+engenders is proportional to the surprise with which that event
+arrives, and that we cannot make this otherwise.  Our preaching on
+this topic wastes airtime; the more we say "It is coming" the more
+those who live in the moment will have good and marketable reason
+to ignore us.  Speaking as a person with some training in probability,
+the point to remember is that probabilistic events occur eventually.
+
+If we look at Nature in the form of the equations of ecology, we
+see two alternative games for survival, r-selection and K-selection.[EP]
+R-selected species produce many offspring, each of whom has a
+relatively low probability of surviving to adulthood while K-selected
+species are strong competitors in crowded niches.  K-selected species
+invest more heavily in much fewer offspring, each of whom has a
+relatively high probability of surviving to adulthood.  If we change
+the term from "produce many offspring" to "re-image frequently" you
+now have precisely the world of VMs.  Or, to be more current still,
+the kind of components in a DevOps setting where it is arguable
+whether moving target defense or minimizing new product introduction
+latency is the paramount goal.[MM]
+
+This idea of punctuated equilibrium has a hold on me.  I trace the
+birth of the cybersecurity industry to Microsoft's introduction of
+a TCP/IP stack as a freebie in the Windows 95 platform thereby
+taking an operating system designed for a single owner/operator on
+a private net and connecting it to a world where every sociopath
+is your next door neighbor.  That event was the birth of our industry,
+though the fact was unnoticed at the time.
+
+The second of these moments occurred somewhere around 2006 when our
+principal opponents changed over from adventurers and braggarts to
+professionals.  From thereon, mercenaries, some armed with zero-days,
+dominated.  The defense response has been varied, but the rise of
+bug-bounty programs and software analysis companies are the most
+obvious.  An Internet of Things with a compound annual growth rate
+of 35% will be like anabolic steroids for at least those two.
+
+This past August, we passed a third such moment.  The DARPA Cyber
+Grand Challenge[CGC] showed that what has heretofore required human
+experts will shortly come within the ken of fully automatic programs,
+or, shall we say, algorithms that are today at the upper level of
+skill with intelligence, per se, soon to follow.  As with both of
+the previous two turning points, the effects will reverberate for
+the indefinite future.  I have long argued that all security
+technologies are dual use, and the day after the Cyber Grand Challenge
+Mike Walker, its DARPA program manager, said as much: "I cannot
+change the reality that all security tools are dual-use".[MW]
+
+Those who wrote "[W]henever any Form of Government becomes
+destructive..., it is the Right of the People to alter or to abolish
+it" also wrote "[T]he right of the people to keep and bear arms
+shall not be infringed", and they wrote both at a time when the
+weapons of the yeoman farmer were on par with the weapons of the
+infantryman.  In the intervening centuries, weapons of infantries
+so surpassed those of the yeomen that any right of the people to
+abolish destructive government could not rely on weapons kept at
+home, but relative might between state and non-state is today closer
+than it has been at any time since 1791.  This oscillation in the
+balance of power may be peaking, but never before could a dozen
+guys and gals in their pajamas meaningfully annul the State's use
+of force.
+
+-----------------------------------------------------------------
+
+But to talk about the future of cybersecurity, it seems appropriate
+to start with an indicative triplet of quotes about prediction.
+
+First up is neuroscientist and engineer Jeff Hawkins:
+
+  Prediction is not just one of the things your brain does.  It is
+  the primary function of the neo-cortex, and the foundation of
+  intelligence.
+
+Then there is Nobel prize winning economist Milton Friedman:
+
+  The only relevant test of the validity of a hypothesis is comparison
+  of prediction with experience.
+
+And, finally, novelist Warren Ellis:
+
+  I try not to get involved in the business of prediction.  It's a
+  quick way to look like an idiot.
+
+With those three we have an idea of what prediction is, (1) that
+it is a primary function of intelligence, perhaps even the core of
+what intelligence is, (2) that, like science in general, claims
+that can never be tested are not worth listening to, and (3) that
+quite possibly the surest prediction to make is that in making a
+prediction your intelligence will become testable and shown to be
+lacking.
+
+Nevertheless, I will now make some predictions.
+
+* Cyberinsecurity is and will remain THE paramount national security
+risk, and counterparty risk will be a large fraction of total risk
+for primary targets both in the commercial sector and in the
+governmental sector.  How this affects outsourcing strategies will
+depend on the publicity accorded those failures of defense that are
+detected.
+
+* Mutual Assured Destruction, as demonstrated for industrial controls
+by Stuxnet, will never have the capacity to ensure threat-stasis
+that it did in the nuclear world.  The reason is attribution: while
+intercontinental ballistic missiles have a visible flight path and
+a limited number of launch-capable governments, offensive software
+has neither.
+
+* Governmental desire for attribution (of actions) and provenance
+(of traffic) will remain unrequited, but nevertheless those desires
+will be enshrined in policy changes.  Just as it was a public safety
+argument that mandated continuous geocoding of mobile phones, a
+public safety argument will mandate geocoding of the Internet.  The
+increasing precision of non-contact biometrics will eventually join
+the above in a combined mandate.
+
+* Gray market selling of exploit code will continue to have
+government(s) as a primary clientele.
+
+* Major sovereigns will prevent other major sovereigns' products
+from being used in some parts of what they consider their critical
+infrastructure.  While already evident, e.g. Huawei routers in the
+U.S. vs. Cisco routers in China, this will extend to cryptographic
+gear including any sensor product with hardware embodied cryptographic
+code.  Industrial espionage will thus rise in importance to nation
+states, as if it were not high enough already.
+
+* Civilian strikeback will remain exceptional and only allowable
+when a civilian entity is paired with a governmental entity, e.g.,
+Microsoft with the U.S. Dept. of Justice against Coreflood.
+
+* Pre-deployment of cyber weaponry in otherwise non-military
+positions, which is to say in devices, in networks, etc., is all
+but certain.  Much of that pre-deployment will initially be for
+tactical denial of information service in one form or another, but
+is likely to expand into disinformation as soon as sensors assume
+a place in the critical path for autonomous devices.
+
+* The most substantial cyber-centric crime rings will continue to
+operate from a small number of sovereign jurisdictions wherein they
+enjoy tolerance if not revenue sharing.
+
+* Silent failure will continue to dominate important breaches; for
+those entities able to organizationally afford it, ongoing full
+network capture, so as to be able to answer "How long has this been
+going on?", will become a legal duty in common law jurisdictions.
+
+* Cyber attack detection using behavioral techniques, viz., anomaly
+detection against long-term norms, will be used with greater vigor,
+but with immense side effects.
+
+* The tendency for democratic regimes to delay meaningful response
+to known probabilities and then to over-respond will be amply
+demonstrated by cyber events.
+
+* The characteristics of financial high frequency trading --
+rapid-fire decision making by self-modifying algorithms -- will
+begin to appear in other domains including the governmental.
+
+* Turning decision making over to machines will be entirely seductive
+but safe if and only if that delegation can be withdrawn, meaning
+that the conditions for operating without that delegation are
+maintained.  Except at the level of especially sentient cybersecurity
+practitioners such as some of you, this lesson will be learned the
+hard way.
+
+* Algorithms derived from machine learning must never be trusted
+unless the "Why?" of decisions those algorithms make can be usefully
+examined on demand.  This dictum of "interrogatability" may or may
+not be codified while there is still time to do so.  Once the chance
+is lost, going back to non-self-modifying algorithms will prove to
+be costly.  While various baby steps towards algorithmic regulation
+will take place, e.g., for traffic management, none of these will
+yet be critically relevant to either cyber or national security
+within the near-term envelope.
+
+* The skills shortage in cyber security will not be solved.
+Governmental sectors will remain unable to retain those they have
+nurtured.  The half-dozen enterprises able to pay any price for
+talent will get all or most of that talent.  Algorithms will therefore
+be deployed to do what we ourselves cannot do, which is to protect
+us from other algorithms.
+
+* Because Western societies rely on infrastructure that is privately
+owned, Western governments will have no choice but to call on private
+infrastructure's management to perform actions necessary to national
+security goals.  It seems fair to characterize this extension of
+governmental duty to private sector firms as "deputizing" them,
+regardless of whether it is against management's will to be so
+deputized.  This was, of course, the story around telephone records
+at AT&T, et al., and will be the story soon enough around cloud
+computing and data handlers.  For the non-Western governments, this
+issue is, of course, moot.
+
+* Multinational companies face conflicting demands from governments,
+and this conflict will be made more severe by governments' increasing
+efforts at extra-territorial reach.  As is said in every law school,
+hard cases make bad law.
+
+* The percentage of personal communications that are encrypted will
+rise, but more due to supplier actions than to citizen actions.
+This will distinguish free from non-free States to a degree, but
+not as much as the self-congratulating claptrap suppliers would like
+you to believe.
+
+* The information given up voluntarily in social media will be
+increasingly employed by actors of all types.  In non-free
+jurisdictions, disinformation plants in social media will continue
+to rise in tactical utility to those jurisdictions' aims.  In free
+jurisdictions, social media will be a substantial component to the
+Clearance process and other selection processes.  In all jurisdictions,
+social media's contribution to mob psychology and polarization will
+continue apace.[GO]
+
+* The impedance mismatch between the feature sets of IPv4 and IPv6
+will be exploited in unforeseeable ways, perhaps beginning with
+address hopping.  Or, as Cisco suggests, "non-centralized address
+assignment in IPv6 creates challenges for controlling address misuse
+by malicious hosts".[CFH]
+
+* Robot intercommunication, e.g., vehicle-to-vehicle between self
+driving cars, will become a target of research in forensics.
+Companies will and have been formed to ensure forensic success.
+Other companies will and have been formed to ensure forensic failure.
+
+* Cybersecurity as a formal science will remain a goal and not an
+accomplishment.[TSK][SOS]
+
+* If a place in society for those who opt out of cyber life is not
+protected, the cyber world will inevitably increase inequality and
+conformity; think an Americans with Disabilities Act but for digital
+rejectionists.  This is not an appeal from some "soft Luddite"
+faction and requires much debate.  That debate can be triggered
+either from the left or from the right.
+
+* Compliance regimes will be of but slight protective value even
+as insurers and regulators demand ever more expensive certifications.
+Ever fewer enterprises will be free of externally imposed cyber-related
+requirements, but these will continue to be as they are now, a
+transferable cost for the larger enterprises and an insurmountable
+shakedown for the smaller.
+
+* End-User License Agreements (EULAs) that deny all responsibility
+will be effectively challenged as soon as a suitable crisis appears.
+Autonomous vehicles may be where such challenges draw their first
+blood.
+
+* Enforceable guarantees for the integrity of retained information,
+backstopped by some liability regime not yet designed, will come
+into existence.  Electronic health records may be where such
+challenges draw their first blood, and, as with the above, as soon
+as a suitable crisis appears.
+
+-----------------------------------------------------------------
+
+Winston Churchill observed that "The further back I look, the further
+forward I can see".  Let's look backwards to see if it helps us
+look forward.
+
+One thing we see is that there is a kind of oscillation is going
+on; thirty years back, you would take your data to where the computing
+was -- a university's central computing facility perhaps.  Then
+inventions made it possible to move the computing to where the data
+was and every worker came to have something on their desk with which
+to do that processing.  Then come the twin innovations of virtualization
+and software-defined networks, so the distal end is once again a
+display tool while the data has again gone to where the computing
+is (only now we can't tell where "where" is).  The next oscillation
+has already begun but it is unevenly distributed; computing is going
+back to where the data resides -- in the sensor fabric, per se.
+
+Since 1648, Westphalian States have had a "monopoly on the legitimate
+use of force within their territory".  For that to have continuing
+relevance, cyberspace must be balkanized and each State must amass
+the means to project cyberforce.  Yet, as we know, with enough
+interconnections physical boundaries and cyber boundaries lose all
+correlation, so States increasingly define cyber-territory by where
+their subjects electronically go, whether by destination control
+in the Chinese style or by data control in the EU style.  And so
+appears a second impetus to geocode the Internet -- the merger of
+national security with domestic tranquility.
+
+Worldwide, governments have largely come to procure COTS products
+across the board.  As such, breaking the cybersecurity protections
+of a domestic target requires the same skills and equipment as
+breaking the protections of a foreign target.  In a sense, dual use
+COTS cyber technology is deployed more widely amongst the civilian
+sector than it is in the military sector.  In my opinion, this
+militarizes the civilian sector more than the reverse.
+
+In the 1980s, the civilian sector caught up with the military sector
+in the design of survivable communications infrastructure.  In the
+1990s, the civilian sector caught up with the military sector in
+the application of cryptography.  In the 2000s, the civilian sector
+surpassed the military sector in the deployment of wide area
+scalability.  Today, the civilian sector is sporadically challenging
+the military sector in traffic analysis, and already the civilian
+sector has far, far more listening posts than does the military
+sector.
+
+The rising generation has a demonstrably different definition of
+"privacy" than those now in power.  Amongst the classic triad of
+confidentiality, integrity, and availability, we have heretofore
+prioritized confidentiality, especially in the military sector.
+That will not be the case going forward.  In the civilian sector,
+integrity will supplant confidentiality as the highest goal of
+cybersecurity.  In the military sector, weapons against integrity
+already far surpass weapons against confidentiality.
+
+If I take your picture on the public street, I do not need to give
+you any notice -- and you have no basis to complain about it.  If
+there is visible light, then your image is fair game.
+
+My porch light has a motion sensor that can see as far as the public
+sidewalk.  If you walk by, it will light up -- and you have no basis
+to complain that it captured your movement.  If there is infrared
+light, then you are fair game.
+
+Your heart emits unique electromagnetic pulses.  What if I can
+detect and capture those signals?  If there are microwaves, then
+you are fair game, and the product to do that already exists.
+
+If you have a new car, it broadcasts several unique Bluetooth signals
+as a matter of compliance with public safety regulation.  If you
+have a constellation of high-frequency radios, then you are fair
+game.
+
+The inexpensive Wi-Fi router in most homes continuously advertises
+the service set identifier -- and it was probably selected by the
+owner to be meaningful.  That information is being broadcast on a
+2.4GHz radio band through the air; that information is fair game.
+
+That is enough examples that wavelength does not matter.  What is
+fair game to observe is independent of wavelength -- I have every
+power to capture what you emanate.  Even just in visible light, the
+technology is readily available today to capture and recognize your
+iris from a distance of 50 yards.  Facial recognition is feasible
+at 500 yards.  The unique pattern of your gait can be detected in
+no more than 10 paces.  Being concrete, does my right to look at
+you -- and capture your identity and identifiers -- depend on what
+I'm looking for?  Hardly.
+
+Most so-called privacy laws exist to block government actions with
+respect to data handling.  Some few exist to block private institutional
+actions.  None exist to block individuals' actions.  And so we come
+the Supreme Court case of Kyllo v. US.  In it, defendant Danny Lee
+Kyllo, a marijuana grower, argued that police use of a thermal
+imager to discover the high-intensity lights growing marijuana in
+his garage constituted a search for which a warrant was necessary.
+
+The Court held: "Where, as here, the Government uses a device that
+is not in general public use, to explore details of a private home
+that would previously have been unknowable without physical intrusion,
+the surveillance is a Fourth Amendment 'search,' and is presumptively
+unreasonable without a warrant."[DLK]
+
+Parse that carefully -- the requirement for a warrant exists solely
+where the device to be used to gather photons is "not in general
+public use".
+
+As anyone knows, what the government and only the government has
+today, the rich will have tomorrow.  What the rich have tomorrow
+the lumpen digitariat will have it the day after tomorrow -- and
+that is within a now established precedent that general public use
+removes any prohibitions on use by government or other institutions.
+
+Take that thermal imager; sixteen years ago when Kyllo was decided,
+the devices at issue were not in general public use.  Now, they
+are.  One advertisement reads: "Multispectral imaging -- maximizes
+details and image sharpness, adds GPS location to images, self-calibrates
+for optimum image and accurate temperature calculation, combines
+infrared with visual input, records audio with the video which is
+directly stored in the iPhone photo gallery."
+
+That description begins with "multispectral," meaning that it
+combines multiple wavelengths -- visible light, infrared light, and
+GPS radio.  The number of emanations that are capturable by devices
+that are in general public use is large and growing.  You tell me,
+what does "appearing in public" mean as that variety grows?  That
+multiple spectra are correlatable is hardly a surprise, but does
+your intuition tell you that the net effect is additive, that each
+new correlation adds "1" to some pre-existing sum?  Or is the power
+of correlation such that each new one added does not increase a sum
+through addition but a product through multiplication like a compound
+interest sort of calculation?
+
+This is the point: No society, no people need rules against things
+that are impossible.  If your personal "expectation of privacy" is
+based on some impossibility of observability, some impossibility
+of identifiability, or even some impossibility of data misuse as
+defined by you, then your logic, like that of the Supreme Court,
+is temporary, wishful, and weak.  We can only sabotage use.  We can
+individually withdraw, and some of us are doing so.  For those who
+will not withdraw, we must treat data stockpiling no differently
+from stockpiling combinations of lethal chemicals that grow
+increasingly dangerous as their varieties increase.  There is no
+mechanistic difference whatsoever between personalization and
+targeting save for the intent of the analyst.  To believe otherwise
+is to believe in the Tooth Fairy.  To not care is to abandon your
+duty.
+
+Yet everywhere the talk is about "big data" and how much better an
+instrumented society will be; the current issue of Popular Mechanics
+magazine is entitled "Smart Everything".  The cumulative effect of
+the curves for computing, storage, and bandwidth is this: in 1986
+you could fill the world's total storage using the world's total
+bandwidth in two days.  Today, it would probably take nine months
+of the world's total bandwidth to fill the world's total storage,[MH]
+but because of replication, synchronization, and sensor-driven
+autonomy, it is no longer really possible to know how much data
+there is.  Decision making that depends or depended on knowing how
+much data there is is over.
+
+As you know, Moore's Law has begun slowing.  Reason #1 is physics:
+We can't cool chips at clock rates much beyond what we have now.
+Reason #2 is economics: The cost of a new fab doubles every two
+years -- which is Moore's lesser-known Second Law.  By 2018 one new
+fab will be as expensive in inflation adjusted terms as was the
+entire Manhattan Project.[GB]
+
+Cryptographic performance is now a front-and-center topic.  The
+commercial sector is adding cryptographic protections to an expanded
+range of products and services, but the design question is whether
+to improve cryptographic performance with ever more adroit software
+or to implement directly in hardware.  Going to hardware yields
+gains in performance not otherwise possible, but embodiments in
+hardware close out "algorithm agility" as an option for failsafe
+design[DK] and as Gwern Branwen points out, only the largest volume
+products will be manufactured with the most advanced technology[GB].
+Just as I said here nine years ago, high volume and all alike either
+wins decisively or fails catastrophically
+
+In the desktop & handheld worlds, over time cost stays constant,
+performance rises, and upgrades dominate.  In the embedded world,
+over time performance stays constant, costs go down, and devices
+proliferate.  Ergo, the embedded systems space has long since made
+the attack surface of the non-embedded space trivial by comparison.
+It was two years ago when the count of networked devices exceeded
+the count of human beings.[IOT]  Qualcomm's Swarm Lab at UC Berkeley
+predicts 1000 radios per human by 2025, while Pete Diamandis'
+_Abundance_ calls for 45x10^12 networked sensors by 2035.  These
+kinds of scale cannot be supervised, they can only be deployed and
+left to free-run.  If any of this free-running is self-modifying,
+the concept of attack surface is just plain over as is the concept
+of trustworthy computing, at least as presently understood.  This
+will indirectly confirm the collective point made by the Santa Fe
+and Morgan Stanley, that optimality and efficiency are the enemies
+of robustness and resilience,[SFI] and it will echo John McAfee in
+this week's issue of Newsweek magazine,
+
+    Any logical structure that humans can conceive will be susceptible
+    to hacking, and the more complex the structure, the more certain
+    that it can be hacked.[JM]
+
+In a world of rising interdependence, APT will not be about the
+big-ass machines; it will about the little.[DG]  It will not go
+against devices with a hostname and a console and a backup regime;
+it will go against the ones you didn't even know about.  It will
+not be something you can fix for any of the usual senses of the
+English word "fix"; it can be avoided only by damping dependence.
+It cannot and will not be damped by supply chain regulations or ex
+post facto mitigation drills.  You are Gulliver; they are the
+Lilliputians.
+
+Eighteen years ago, Lazslo Barabasi showed it is not possible to
+design a network that is at once proof against both random faults
+and targeted faults.[LB]  His conception of a scale-free network
+is good enough for our planning purposes, and today we have a network
+that is pretty well immune to failure from random faults but which
+is hardly immune to targeted faults.  Thirteen years ago, Sean
+Gorman's simulations showed a crisp threshold in network-wide
+susceptibility to cascade failure when a remotely exploitable flaw
+reached 43% prevalence.[SG]  We are way above that 43% threshold
+in many, many areas, most of them built-in, unseen, silent.  Seven
+years ago, Kelly Ziegler calculated that patching a fully deployed
+Smart Grid would take an entire year to complete, largely because
+of the size of the per-node firmware relative to the available
+powerline bandwidth.[KZ]
+
+The root source of risk is dependence, especially dependence on the
+expectation of stable system state.  Dependence is not only individual
+but mutual, not only am I dependent or not but rather a continuous
+scale asking whether we are dependent or not; we are, and it is
+called interdependence.  Interdependence is transitive, hence the
+risk that flows from interdependence is transitive, i.e., if you
+depend on the digital world and I depend on you, then I, too, am
+at risk from failures in the digital world.  If individual dependencies
+were only static, they would be eventually evaluable, but we regularly
+and quickly expand our dependence on new things, and that added
+dependence matters because we each and severally add risk to our
+portfolio by way of dependence on things for which their very newness
+confounds risk estimation and thus risk management.  Interdependence
+within society is today absolutely centered on the Internet beyond
+all other dependencies excepting climate, and the Internet has a
+time rate of change five orders of magnitude faster.  Remember, something
+becomes "a critical infrastructure" as soon as it is widely enough
+adopted; adoption is the gateway drug to criticality.
+
+Interdependence is present even at the individual scale; any pool
+of synchronized data stores is as jointly vulnerable to a loss of
+integrity as is the weakest member of the pool.  The proliferation
+of encryption should therefore not trouble governmental authorities
+as interdependencies within any one person's digital pool offer an
+avenue to reading that person's mail, a point well made three years
+ago in MIT's Technology Review by Nathan Freitas.[NF]  Further,
+with software auto-update in a fully personalized digital world,
+there is no governmental necessity to mandate engineered-in backdoors;
+just provide the target with a very special auto-update.  Because
+active defense against malware writers is moving in the direction
+of artificial diversity, comparing updates will be uninformative
+even to targets who have the gumption to do so.
+
+The execution space on the web today is that the client is the
+server's server, its bondsman if not concubine.[MK]  You intake
+Remote Procedure Calls (RPCs) from everywhere and everyone.  You
+are supposed to believe that trust is transitive but that risk is
+not.  That is what Javascript does.  That is what Flash does.  That
+is what HTML5 does.  That is what every embedded Browser Help Object
+(BHO) does.  The HTTP Archive says that the average web page today
+makes out-references to 16 different domains as well as making 17
+Javascript requests per page, and the Javascript byte count on-the-wire
+is five times the HTML byte count.[HT]  A lot of that Javascript
+is about analytics which is to say surveillance of the user
+"experience".  On-the-fly insertion of script code has been shown
+to weaponize the browsers of innocent bystanders.[DD]
+
+My colleagues at a leading software security assessment firm are
+seeing machine written code of vast sizes that contain apparent
+vulnerabilities -- meaning even machines write vulns.  In a 2014
+Atlantic Monthly article,[BS] Bruce Schneier asked a cogent
+first-principles question: Are vulnerabilities in software dense
+or sparse?  Treating that as a policy question, if they are sparse,
+then every one you find and fix meaningfully lowers the number of
+avenues of attack that are extant.  If they are dense, then finding
+and fixing one more is essentially irrelevant to security and a
+waste of the treasure spent finding it.  Six-take-away-one is a 15%
+improvement.  Six-thousand-take-away-one has no detectable value.
+My policy answer is that for any body of stable code under competent
+leadership they are sparse, but as code volume explodes the total
+number of extant vulnerabilities must rise, which leads us back to
+Taleb and the heavy tails of power law distributions and to my
+proposal to just find out by using the power of the US Treasury to
+corner the market in vulnerabilities.  Ongoing work by various
+researchers[SH][DA][DG2] on the rediscovery rate for vulnerabilities
+can help craft an Executive Order.
+
+As Daniel Bilar showed in his analysis of Conficker,[DB] "attackers
+and defenders each present moving targets to the other," that is
+to say that oscillating advantage is to be expected just as in
+Nature's predator/prey dynamics or in game theory.  Why?  Because
+a sentient opponent does whatever he can to exploit your code by
+way of exploiting the assumptions on which your code is built.
+Sandy Clark showed that if software security is your goal, then
+"software re-use is more harmful to software security than beneficial".
+Why?  Because a sentient opponent first has to learn how your code
+works and you help him by re-using components.[SC]  In short, is
+it time to give up on software security or to double down the way
+the Language Theoretic Security Group [LANGSEC] shows us?  Do we
+need more evidence than LANGSEC, Bilar, and Clark, with their
+collaborators, have given us?  Is it time finally to accept Ken
+Thompson's seminal observation that you can only trust a program
+you wrote entirely and to act accordingly?[KT]  At least one NYC
+bank no longer buys software, and for that reason.
+
+Other than HTML v4, the near entirety of commercial Internet usage
+relies upon Turing-complete languages so the security of these
+services can never be proven because to do so would be to solve the
+halting problem.[HALT]  As such, the pinnacle goal of security
+engineering is *no silent failure*; it is not and cannot be *no
+failure*.  For society, then, a state of security is the absence
+of unmitigatable surprise, not no surprises but rather no surprises
+that do not have a mitigation pre-built and within easy reach.
+Sen. Angus King, et al., with Senate Bill 79 have taken a stab at
+this and I encourage you to support it.[AK]
+
+As I said at the outset, Cybersecurity and the future of humanity
+are conjoined now, and each of cybersecurity's core realities has
+policy freight.  "For now we see through a glass, darkly; but then
+face to face: now I know in part; but then shall I know even as
+also I am known".  To be deadly serious about cybersecurity requires
+that --EITHER-- we damp down the rate of change, slowing it enough
+to give prediction operational validity --OR-- we purposely increase
+unpredictability so that the opposition's targeting exercise grows
+too hard for them to do.  In the former, we give up many and various
+sorts of progress.  In the latter, we give up many and various sorts
+of freedom as it would be the machines then in charge, not us.
+Either way, the conjoining is irreversible.
+
+You have not picked a career.  You have picked a crusade.
+
+There is never enough time; thank you for yours.
+
+
+-----------------------------------------------------------------
+
+this and other material on file under geer.tinho.net/pubs
+
+
+-----------------------------------------------------------------
+
+References in alphabetic order
+
+[AK] Senate Bill #79, Angus King, January 2017
+www.congress.gov/115/bills/s79/BILLS-115s79is.pdf
+
+[BS] B Schneier, "Should U.S. Hackers Fix Cybersecurity Holes or
+Exploit Them?", May 2014
+www.theatlantic.com/technology/archive/2014/05/should-hackers-fix-
+cybersecurity-holes-or-exploit-them/371197
+
+[CFH] Cisco, "IPv6 First-Hop Security Concerns"
+www.cisco.com/c/en/us/about/security-center/ipv6-first-hop.html
+
+[CGC] DARPA Cyber Grand Challenge, 4 August 2016
+
+[DA] D Aitel, "Everything You Know About the Vulnerability Equities
+Process Is Wrong", 2017
+www.lawfareblog.com/everything-you-know-about-vulnerability-equities-process-wrong
+
+[DB] D Bilar, et al., "Adversarial Dynamics: The Conficker Case
+Study," Springer, 2013
+www.docdroid.net/file/download/agqw/2013-bilar-adversarial-dynamics.pdf
+
+[DD] "Baidu's traffic hijacked to DDoS GitHub.com"
+insight-labs.org/?p=1682
+
+[DG] D Geer, "Advanced Persistent Threat," Computerworld, April 2010
+www.computerworld.com/s/article/9175363/Advanced_persistent_threat
+
+[DG2] D Geer, "The Undiscovered", USENIX ;login:, April 2015
+geer.tinho.net/fgm/fgm.geer.1504.pdf
+
+[DK] D Knuth, "Premature optimization is the root of all evil."
+
+[DLK] Decided June, 2011
+caselaw.findlaw.com/us-supreme-court/533/27.html
+
+[GB] G Branwen, "Slowing Moore's Law", 2017
+www.gwern.net/Slowing%20Moore's%20Law
+
+[GO] G Orwell, "Who controls the past controls the future; who
+controls the present controls the past", Ingsoc, _1984_
+
+[HALT] The halting problem is a precise formulation in computer
+science describing the classes of questions for which the answer
+is that there is no answer.  If a problem can be shown to be
+equivalent to the halting problem, then, like the halting problem,
+it cannot be answered.  These questions are the computer programming
+equivalent of saying "I always lie": if it's true, then it's not
+true, and if it's not true, then it's true.
+
+[HT] Trends, HTTP Archive
+www.httparchive.org/trends.php
+
+[IOT] "Implications of the IoT", USENIX ;login:, December 2016
+geer.tinho.net/fgm/fgm.geer.1612.pdf
+
+[JM] J McAfee, Newsweek, 22 April 2017
+www.newsweek.com/advanced-artificial-intelligence-hacks-itself-587675
+
+[KT] K Thompson, "On Trusting Trust," CACM, August 1984
+cm.bell-labs.com/who/ken/trust.html
+
+[KZ] K Ziegler, "The Future of Keeping the Lights On," USENIX, 2010
+static.usenix.org/events/sec10/tech/slides/ziegler.pdf
+
+[LANGSEC] The View from the Tower of Babel,
+langsec.org
+
+[LB] L Barabasi & R Albert, "Emergence of scaling in random networks,"
+Science, v286 p509-512, October 1999
+
+[MH] M Hilbert, www.martinhilbert.net/WorldInfoCapacityPPT.html
+(reflecting Hilbert & Lopez, Science:v332/n6025/p60-65) extrapolated
+to 2014 with concurrence of its author; see also
+www.martinhilbert.net/wp-content/uploads/2015/03/HMI-Review_Hilbert2015.pdf
+
+[MK] M Kolsek, ACROS, Slovenia, personal communication
+
+[MM] M Maiffret, personal communication
+
+[MW] M Walker, as quoted in
+www.eweek.com/security/darpa-cyber-grand-challenge-ends-with-mayhem
+
+[NF] N Freitas, "6 Ways Law Enforcement Can Track Terrorists in an
+Encrypted World," Technology Review, 2014
+www.technologyreview.com/view/543896/6-ways-law-enforcement-can-track-te
+rrorists-in-an-encrypted-world
+
+[NT] N Taleb, _Incerto_ series: _Fooled by Randomness_, _The Black
+Swan_, _The Bed of Procrustes_, _Antifragile_
+
+[EP] E Pianka, "On r and K Selection," American Naturalist, 1970
+www.researchgate.net/publication/275142242_R-Selection_and_K-Selection
+
+[SC] S Clark, et al., "The Honeymoon Effect and the Role of Legacy
+Code in Zero-Day Vulnerabilities," ACSAC, 2010
+www.acsac.org/2010/openconf/modules/request.php?\
+module=oc_program&action=view.php&a=&id=69&type=2
+
+[SFI] "Optimality vs. Fragility: Are Optimality and Efficiency the
+Enemies of Robustness and Resilience?", 2014
+www.santafe.edu/events/annual-risk-meeting-optimality-vs-fragility-a
+
+[SG] S Gorman, et al., "The Effect of Technology Monocultures on
+Critical Infrastructure", 2004,
+policy.gmu.edu/imp/research/Microsoft_Threat.pdf
+
+[SH] B Schneier & T Herr, "Taking Stock: Estimating Vulnerability
+Rediscovery", 2017
+papers.ssrn.com/sol3/papers.cfm?abstract_id=2928758
+
+[SOS] NSA, Science of Security,
+www.nsa.gov/what-we-do/research/science-of-security
+
+[TSK] "T.S. Kuhn Revisited", 6 January 2015,
+geer.tinho.net/geer.nsf.6i15.txt
+
+[WG] W Gibson, as heard on NPR, 31 August 1993
+
