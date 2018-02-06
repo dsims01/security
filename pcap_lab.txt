@@ -13,7 +13,7 @@ All of the communication is unencrypted so any hacker can easily see what is
 going on in plain english
 
 4. What is the secure alternative to the protocol used to transfer files?
-FTPS
+TPS
 
 5. What is the IP address of the server? (be careful)
 192.168.1.3
@@ -37,10 +37,19 @@ wut.jpg
 
 set2.pcap
 10. How many packets are there in this set?
+76409
 
 11. How many plaintext username-password pairs are there in this packet set? Please count any anonymous or generic accounts.
 
-12. For each of the plaintext username-password pair that you found, identify the protocol used, server IP, the corresponding domain name if possible (e.g., google.com), and port number.
+12. For each of the plaintext username-passwaord pair that you found, identify the protocol used, the server IP the corresponding domain name if possible and port number
+HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
+HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
+HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
+HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
+HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
+HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
+IMAP : 74.220.219.141143 -> USER: ventas@wekiguatemala.com.gt  PASS: "$Alesgt1.1"
+IMAP : 74.220.219.141:143 -> USER: ventas@wekiguatemala.com.gt  PASS: "$Alesgt1.1"
 
 IMPORTANT NOTE: PLEASE DO NOT LOG ON TO THE WEBSITE OR SERVICE ASSOCIATED WITH THE USERNAME-PASSWORD THAT YOU FOUND!
 
