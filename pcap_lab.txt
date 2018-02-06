@@ -40,16 +40,21 @@ set2.pcap
 76409
 
 11. How many plaintext username-password pairs are there in this packet set? Please count any anonymous or generic accounts.
+8 pairs, (2 unique pairs)
 
 12. For each of the plaintext username-passwaord pair that you found, identify the protocol used, the server IP the corresponding domain name if possible and port number
-HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
-HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
-HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
-HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
-HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
-HTTP : 176.58.103.138:80 -> USER: wbgapp31216  PASS: Q827wO6656!nW99_a1  INFO: utils.wbg-server.se:80/wbg/img/GetAccount
-IMAP : 74.220.219.141143 -> USER: ventas@wekiguatemala.com.gt  PASS: "$Alesgt1.1"
-IMAP : 74.220.219.141:143 -> USER: ventas@wekiguatemala.com.gt  PASS: "$Alesgt1.1"
+Pair:      USER: wbgapp31216  PASS: Q827wO6656!nW99_a1
+Protocol:  HTTP
+Server IP: 176.58.103.138
+Domain:    utils.wbg-server.se
+Port:      80
+
+Pair:      USER: ventas@wekiguatemala.com.gt  PASS: "$Alesgt1.1"
+Protocol:  IMAP
+Server IP: 74.220.219.141
+Domain:    wekiguatemala.com
+Port:      143
+
 
 IMPORTANT NOTE: PLEASE DO NOT LOG ON TO THE WEBSITE OR SERVICE ASSOCIATED WITH THE USERNAME-PASSWORD THAT YOU FOUND!
 
