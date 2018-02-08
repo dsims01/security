@@ -62,18 +62,106 @@ both are legitimate
 
 
 14. Provide a listing of all IP addresses with corresponding hosts (hostname + domain name) that are in this PCAP set. Describe your methodology.
+Went to [Statistics->Resolved Addresses] to get this listing:
 
+
+17.178.96.59	apple.com
+17.139.246.6	mt-ingestion-service-pv.itunes-apple.com.akadns.net
+104.27.183.94	warl0ck.gam3z.com
+169.46.12.69	api.south.kontagent.net
+151.101.1.181	prod.taboola.map.fastly.net
+104.27.182.94	warl0ck.gam3z.com
+23.215.130.192	a1089.d.akamai.net
+172.217.11.74	googleapis.l.google.com
+172.217.11.170	googleapis.l.google.com
+192.12.94.30	e.gtld-servers.NET
+151.101.65.181	prod.taboola.map.fastly.net
+192.26.92.30	c.gtld-servers.NET
+54.239.17.86	completion.amazon.com
+87.240.165.81	api.vk.com
+169.46.12.74	api.south.kontagent.net
+115.231.99.203	ps.cname2.igexin.com
+23.5.251.27	e8218.dscb1.akamaiedge.net
+31.13.77.49	mmx-ds.cdn.whatsapp.net
+151.101.129.181	prod.taboola.map.fastly.net
+23.45.86.46	e4478.a.akamaiedge.net
+17.142.160.59	apple.com
+172.217.4.142	clients.l.google.com
+17.139.246.7	mt-ingestion-service-pv.itunes-apple.com.akadns.net
+169.46.12.88	api.south.kontagent.net
+165.227.0.37	vtfbctf.com
+151.101.193.181	prod.taboola.map.fastly.net
+169.46.12.79	api.south.kontagent.net
+72.21.91.113	cs84.wac.edgecastcdn.net
+17.253.23.207	cdn-icloud-content.g.aaplimg.com
+208.71.44.30	fd-geoycpi-uno.gycpi.b.yahoodns.net
+169.46.12.70	api.south.kontagent.net
+172.217.5.74	googleapis.l.google.com
+172.217.5.202	googleapis.l.google.com
+104.244.46.71	wildcard.twimg.com
+104.244.46.39	wildcard.twimg.com
+104.244.46.231	wildcard.twimg.com
+169.46.12.93	api.south.kontagent.net
+17.173.66.102	p51-buy.itunes-apple.com.akadns.net
+52.94.224.25	mads.amazon.com
+172.217.4.129	googlehosted.l.googleusercontent.com
+169.46.12.84	api.south.kontagent.net
+23.215.130.184	a1089.d.akamai.net
+172.217.11.66	pagead46.l.doubleclick.net
+216.58.216.4	www.google.com
+216.58.193.202	googleapis.l.google.com
+104.68.97.2	e12930.ksd.akamaiedge.net
+64.4.54.254	cy2.vortex.data.microsoft.com.akadns.net
+169.46.12.66	api.south.kontagent.net
+23.253.220.65	schemaverse.marcneuwirth.com
+17.56.160.246	api.smoot-apple.com.akadns.net
+115.233.212.147	ps.cname2.igexin.com
+192.33.14.30	b.gtld-servers.NET
+192.31.80.30	d.gtld-servers.NET
+104.41.208.54	production-roundrobin.skype-registar.akadns.net
+17.172.224.47	apple.com
+184.24.107.198	e1879.e7.akamaiedge.net
+208.71.44.31	fd-geoycpi-uno.gycpi.b.yahoodns.net
+34.201.64.150	lc80.dsr.livefyre.com
+216.58.216.46	connectivitycheck.android.com
+95.213.11.139	api.vk.com
+218.205.81.155	ps.cname2.igexin.com
+17.125.252.5	sp11p03sa.guzzoni-apple.com.akadns.net
+23.203.204.8	e673.e9.akamaiedge.net
+216.115.100.123	fd-geoycpi-uno.gycpi.b.yahoodns.net
+72.21.206.140	s.amazon-adsystem.com
+169.46.12.72	api.south.kontagent.net
+107.23.77.203	gregord-elb-298228113.us-east-1.elb.amazonaws.com
+17.139.246.5	mt-ingestion-service-pv.itunes-apple.com.akadns.net
+172.217.4.131	gstaticadssl.l.google.com
+52.45.146.29	gregord-elb-298228113.us-east-1.elb.amazonaws.com
+192.5.6.30	a.gtld-servers.NET
+17.253.23.205	cdn-icloud-content.g.aaplimg.com
+169.46.12.68	api.south.kontagent.net
+23.203.233.109	e2546.dsce4.akamaiedge.net
+216.115.100.124	fd-geoycpi-uno.gycpi.b.yahoodns.net
+74.125.28.188	mobile-gtalk.l.google.com
+23.203.180.198	e6858.dsce9.akamaiedge.net
+2607:f8b0:4007:800::2003	ssl.gstatic.com
+2001:500:856e::30	d.gtld-servers.NET
+2001:503:231d::2:30	b.gtld-servers.NET
+2607:f8b0:4007:804::2002	pagead46.l.doubleclick.net
+2001:503:83eb::30	c.gtld-servers.NET
+2400:cb00:2048:1::681b:b75e	warl0ck.gam3z.com
+2001:503:a83e::2:30	a.gtld-servers.NET
+2400:cb00:2048:1::681b:b65e	warl0ck.gam3z.com
+2607:f8b0:4007:809::2004	www.google.com
 
 
 set3.pcap
 15. How many plaintext username-password pairs are there in this packet set? Please count any anonymous or generic accounts.
+2
 
 16. For each of the plaintext username-password pair that you found, identify the protocol used, server IP, the corresponding domain name if possible (e.g., google.com), and port number.
 
 IMPORTANT NOTE: PLEASE DO NOT LOG ON TO THE WEBSITE OR SERVICE ASSOCIATED WITH THE USERNAME-PASSWORD THAT YOU FOUND!
 
 17. Of all the plaintext username-password pairs that you found, how many of them are legitimate? That is, the username-password was valid, access successfully granted? Please do not count any anonymous or generic accounts.
-
 
 
 General Questions
