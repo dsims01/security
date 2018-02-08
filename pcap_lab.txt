@@ -159,6 +159,11 @@ set3.pcap
 
 16. For each of the plaintext username-password pair that you found, identify the protocol used, server IP, the corresponding domain name if possible (e.g., google.com), and port number.
 
+HTTP : 130.64.23.35:80 -> USER: brodgers  PASS: TheyPlayedWithGreatCharacter  INFO: www.eecs.tufts.edu/~cgregg/grades/
+HTTP : 130.64.23.35:80 -> USER: dmoyes  PASS: IAmAFootballGenius  INFO: www.eecs.tufts.edu/~cgregg/grades/
+HTTP : 130.64.23.35:80 -> USER: aoursler  PASS: Id10tExpert  INFO: www.eecs.tufts.edu/~cgregg/grades/
+
+
 IMPORTANT NOTE: PLEASE DO NOT LOG ON TO THE WEBSITE OR SERVICE ASSOCIATED WITH THE USERNAME-PASSWORD THAT YOU FOUND!
 
 17. Of all the plaintext username-password pairs that you found, how many of them are legitimate? That is, the username-password was valid, access successfully granted? Please do not count any anonymous or generic accounts.
