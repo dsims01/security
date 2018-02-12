@@ -1,4 +1,4 @@
-nc -v -n -z -w1 192.168.1.1 1-10000
+nc -v -n -z -w1 35.196.196.232 1-10000
 
 For questions 1 to 6, the target's IP address is 35.196.196.232.  You are granted permission to attack this remote system.
 
@@ -16,22 +16,23 @@ PORT     STATE SERVICE
 yes
 
 2a. If the target is running web server software, how do you know?  What web server software and version number is being used?
-
+nginx 1.10.3
 
 3. Is the target running a database server of some kind --YES or NO?
-
+no
 
 3a. If the target is running a database server, how do you know? What database server software and version number is being used?
-
+Used nmap -A -P0 35.196.196.232 and the results did not include any ports for databases
 
 4. What operating system *and* distribution is the target (most likely) running?
-
+Linux QEMU
 
 5. Is there a peculiar service running on the target?  If so, determine what it does.  Briefly describe what you did.
-
+Yes, irc. This is a protocol that is used for Internet Relay Chat, but is also often used
+by trojans / backdoors. 
 
 6. Gain remote access to the target.  Explain how you gained access to the target.
-
+Used ssh and then just inputed an empty password when asked for my login credentials
 
 7. Here is a new target IP address: 162.209.120.91.  *****Without using Nmap or directly accessing the target via IP address*****, determine the open ports of this target and what this target is.
 
