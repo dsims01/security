@@ -1,4 +1,5 @@
-nc -v -n -z -w1 35.196.196.232 1-10000
+Derek Sims
+Security - Lab 4
 
 For questions 1 to 6, the target's IP address is 35.196.196.232.  You are granted permission to attack this remote system.
 
@@ -28,8 +29,7 @@ Used nmap -A -P0 35.196.196.232 and the results did not include any ports for da
 Linux QEMU
 
 5. Is there a peculiar service running on the target?  If so, determine what it does.  Briefly describe what you did.
-Yes, irc. This is a protocol that is used for Internet Relay Chat, but is also often used
-by trojans / backdoors. 
+Yes, irc. When accessing this port via <nc 35.196.196.232 6666>, it returns data that turns out to be an image.
 
 6. Gain remote access to the target.  Explain how you gained access to the target.
 Used ssh and then just inputed an empty password when asked for my login credentials
