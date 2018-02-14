@@ -38,3 +38,7 @@ Used ssh and then just inputed an empty password when asked for my login credent
 This target is a wind turbines company (xzeres) and the open ports are 21, 53, 80, 111, 123, 143, 443, 465, 993, 995, 1311, 3306, 8443, 8880
 
 8. NETGEAR R8000, R7000, and R6400 routers have known vulnerabilities.  Using SHODAN, determine how many of them are (still) exposed on the Internet. An article from last December: https://arstechnica.com/security/2016/12/unpatched-bug-allows-hackers-to-seize-control-of-netgear-routers/
+NETGEAR R8000: 3417
+NETGEAR R7000: 6762
+NETGEAR R6400: 2299
+Total:        12478
