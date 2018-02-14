@@ -35,5 +35,6 @@ by trojans / backdoors.
 Used ssh and then just inputed an empty password when asked for my login credentials
 
 7. Here is a new target IP address: 162.209.120.91.  *****Without using Nmap or directly accessing the target via IP address*****, determine the open ports of this target and what this target is.
+This target is a wind turbines company (xzeres) and the open ports are 21, 53, 80, 111, 123, 143, 443, 465, 993, 995, 1311, 3306, 8443, 8880
 
 8. NETGEAR R8000, R7000, and R6400 routers have known vulnerabilities.  Using SHODAN, determine how many of them are (still) exposed on the Internet. An article from last December: https://arstechnica.com/security/2016/12/unpatched-bug-allows-hackers-to-seize-control-of-netgear-routers/
