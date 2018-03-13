@@ -6,14 +6,21 @@ import argparse
 
 iNum = 1
 user_no_password = ""
-
-
+username_checks = ["log","login","wpname","ahd_username","unickname","nickname","user","user_name","alias",
+                   "pseudo","email","username","_username","userid","form_loginname","loginname","login_id",
+                   "loginid","session_key","sessionkey","pop_login","uid","id","user_id","screenname",
+                   "uname","ulogin","acctname","account","member","mailaddress","membername","login_username",
+                   "login_email","loginusername","loginemail","uin","sign-in"]
+password_checks = ["ahd_password","pass","password","_password","passwd","session_password","sessionpassword",
+                   "login_password","loginpassword","form_pw","pw","userpassword","pwd","upassword",
+                   "login_password","passwort","passwrd","wppassword","upasswd"]
 def packetcallback(packet):
   global user_no_password
   try: 
      payload = ""
      if packet[Raw] != None:
         load = str(packet[Raw])
+        load_lower = load.lower()
         start = load.find("Authorization: Basic")
         if start != -1:
             end = load.find('\r', start)
@@ -21,17 +28,21 @@ def packetcallback(packet):
             payload = ' (' + encoded.decode('base64') + ')'
             printAlarm ("username and password sent in-the-clear", packet[IP].src,"",payload)
         else:
-            start = load.find("USER")
-            if start != -1:
-                end = load.find('\r',start)
-                user_no_password = load[start+5:end]
-            if user_no_password != "":
-                start = load.find("PASS")
+            for option in username_checks:
+                start = load_lower.find(option)
                 if start != -1:
-                    end = load.find('\r', start)
-                    password = load[start+5:end] 
-                    payload = ' (' + user_no_password + ':' + password + ')'
-                    printAlarm("username and password sent in-the-clear", packet[IP].src,"",payload)
+                    end = load.find('\r',start)
+                    user_no_password = load[start+5:end]
+                    break            
+            if user_no_password != "":
+                for option in password_checks:
+                    start = load_lower.find(option)
+                    if start != -1:
+                        end = load.find('\r', start)
+                        password = load[start+5:end] 
+                        payload = ' (' + user_no_password + ':' + password + ')'
+                        printAlarm("username and password sent in-the-clear", packet[IP].src,"",payload)
+                        break
         found_nikto = load.find("nikto")
         if found_nikto != -1:
             printAlarm("Nikto scan", packet[IP].src, "HTTP","") 
