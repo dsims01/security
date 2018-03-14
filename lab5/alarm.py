@@ -30,20 +30,21 @@ def packetcallback(packet):
         
         start = load.find("USER ")
         if start != -1:
-                    end = load.find('\r',start)
-                    if end != -1: user_no_password = load[start+5:end]
+            end = load.find('\r',start)
+            if end != -1: user_no_password = load[start+5:end]
         if user_no_password != "":
-                    start = load.find("PASS ")
-                    if start != -1:
-                        end = load.find('\r', start)
-                        if end != -1:
-                            password = load[start+5:end] 
-                            payload = ' (' + user_no_password + ':' + password + ')'
-                            printAlarm("username and password sent in-the-clear", packet[IP].src,"",payload)
-                            user_no_password = ""
+            start = load.find("PASS ")
+            if start != -1:
+                end = load.find('\r', start)
+                if end != -1:
+                    password = load[start+5:end] 
+                    payload = ' (' + user_no_password + ':' + password + ')'
+                    printAlarm("username and password sent in-the-clear", packet[IP].src,"",payload)
+                    user_no_password = ""
         found_nikto = load.find("nikto")
-        if found_nikto != -1:
-            printAlarm("Nikto scan", packet[IP].src, "HTTP","") 
+        found_Nikto = load.find("Nikto")
+        if (found_nikto + found_Nikto) != -2:
+            printAlarm("Nikto scan", packet[IP].src, " (HTTP)","") 
 
      if packet[TCP].flags == 1:
          printAlarm("FIN scan", packet[IP].src,"",payload) 
