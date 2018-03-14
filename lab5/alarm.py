@@ -6,8 +6,11 @@ import argparse
 
 iNum = 1
 user_no_password = ""
-
+num = 0
 def packetcallback(packet):
+  global num
+  #if (num > 9) and (num < 12): packet.show()
+  #num = num + 1
   global user_no_password
   try: 
      payload = ""
@@ -45,7 +48,9 @@ def packetcallback(packet):
         found_Nikto = load.find("Nikto")
         if (found_nikto + found_Nikto) != -2:
             printAlarm("Nikto scan", packet[IP].src, " (HTTP)","") 
-
+        found_shellshock = load.find("() { :;};")
+        if found_shellshock != -1:
+            printAlarm("Shellshock scan", packet[IP].src, "", "")
      if packet[TCP].flags == 1:
          printAlarm("FIN scan", packet[IP].src,"",payload) 
      if packet[TCP].flags == 0:
