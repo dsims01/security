@@ -8,7 +8,6 @@ countries = json.load(open("country-names.json"))
 found_countries = []
 
 with open('access.log','r') as f:
-#     with open('test1.txt','w') as g: 
          for x in f:
          	line = x.rstrip()
          	found_ip = re.findall(r'(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3})\.(?:[\d]{1,3})',line)

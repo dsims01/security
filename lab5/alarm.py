@@ -21,14 +21,14 @@ def packetcallback(packet):
         if start != -1:
             end = load.find('\r', start)
             encoded = load[start+21:end]
-            payload = ' (' + encoded.decode('base64') + ')'
+            payload = encoded.decode('base64')
             printAlarm ("username and password sent in-the-clear", packet[IP].src,packet[TCP].dport,payload)
         if start == -1:
             start = load.find("LOGIN ")
             if start != -1:
                 end = load.find('\r',start)
                 if end != -1:
-                    payload = ' (' + load[start+6:end] + ')'
+                    payload = load[start+6:end]
                     printAlarm ("username and password sent in-the-clear", packet[IP].src,packet[TCP].dport,payload)
         
         start = load.find("USER ")
@@ -41,7 +41,7 @@ def packetcallback(packet):
                 end = load.find('\r', start)
                 if end != -1:
                     password = load[start+5:end] 
-                    payload = ' (' + user_no_password + ':' + password + ')'
+                    payload = user_no_password + ':' + password
                     printAlarm("username and password sent in-the-clear", packet[IP].src,packet[TCP].dport,payload)
                     user_no_password = ""
         found_nikto = load.find("nikto")
@@ -62,7 +62,8 @@ def packetcallback(packet):
 
 def printAlarm(incident, ip, protocol, payload):
     global iNum
-    print 'ALERT #{}: {} is detected from {} ({}) ({})'.format(iNum,incident,ip,protocol,payload)
+    if payload != "": payload = '('+payload+')'
+    print 'ALERT #{}: {} is detected from {} ({}) {}'.format(iNum,incident,ip,protocol,payload)
     iNum = iNum+1
 
 parser = argparse.ArgumentParser(description='A network sniffer that identifies basic vulnerabilities')
