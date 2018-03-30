@@ -1,0 +1,9 @@
+yogiduke:$1$Q4g60Y/B$yDThQ6BWKsSjaqMNNbNi2/:1003:1003:,,,:/home/yogiduke:/bin/bash
+bigduke:$1$WCay.hxX$wMX2c3Yl0n6rv5ddIXAlT.:1004:1004:,,,:/home/bigduke:/bin/bash
+grizzlyduke:$1$B.wi/t0Z$fQo.rAwvW5JCiCCpC7F2Y0:1005:1005:,,,:/home/grizzlyduke:/bin/bash
+pandaduke:$1$lnbM4Z4i$gjOjE0BasRIGK0t90YrlI1:1006:1006:,,,:/home/pandaduke:/bin/bash
+foofooduke:$1$qQ0SGhrr$qNJ/02Xz5RyHZnqM55AYr.:1007:1007:,,,:/home/foofooduke:/bin/bash
+yolandaduke:$1$GJ5zceLI$3HJuSAi4KZ0SpECJ1EmfZ/:1008:1008:,,,:/home/yolandaduke:/bin/bash
+fancyduke:$1$CDnK9/E6$ceO1FS7ptGOf1oOijIPw9/:1009:1009:,,,:/home/fancyduke:/bin/bash
+jojoduke:$1$9HuHlpfc$ibFX5EwhDScIUWOqsKA4O0:1010:1010:,,,:/home/jojoduke:/bin/bash
+peachduke:$1$s3s.Cz2k$nQIZ9RN2Fo8obJ4LjqPBP.:1011:1011:,,,:/home/peachduke:/bin/bash
